@@ -1,96 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <title>Mistério na Capital da Amizade - Umuarama</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Jornada pela Cidade Perdida</title>
 </head>
 <body>
-    <main>
-        <div class="passo ativo" id="passo-0">
-            <img src="parque-de-exposição-umuarama.jpg" alt="Cenário inicial em Umuarama"> 
-            <p>A brisa da manhã em Umuarama trazia o cheiro de café e a promessa de um dia tranquilo. Você, um(a) detetive local, recebe um envelope misterioso com apenas um símbolo: a logo antiga da Expo-Umuarama. A aventura começa agora no Parque de Exposições Dario Pimentel. Há dois caminhos notáveis que levam para direções opostas.</p>
-            <button class="btn-proximo" data-proximo="1">Pista de Laço (Opção A)</button>
-            <button class="btn-proximo" data-proximo="2">Arena de Shows (Opção B)</button>
-        </div>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Um dia desses, dentro de um livro da biblioteca da escola, eu descobri uma carta antiga sobre uma cidade perdida, escondida por riquezas e belezas naturais. Nessa carta, a autora deixa algumas pistas para encontrar essa cidade e eu decidi segui-las!</p>
+            <button class="btn-proximo" data-proximo="1">Rio de Janeiro</button>
+            <button class="btn-proximo" data-proximo="2">Pernambuco</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Você começa sua jornada no Rio de Janeiro, subindo o Pico da Tijuca ao amanhecer para encontrar a primeira pista.</p>
+            <button class="btn-proximo" data-proximo="3">Procurar a pista no topo do pico</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Em Pernambuco, você visita a histórica cidade de Olinda. Na carta, uma das pistas indica que para localizar a entrada para a cidade perdida você deve procurar a próxima pista em um dos pontos turísticos da cidade. Por qual você começa?</p>
+            <button class="btn-proximo" data-proximo="5">Investigar as igrejas antigas</button>
+            <button class="btn-proximo" data-proximo="6">Explorar as praias próximas</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>No topo do Pico da Tijuca, você encontra uma antiga inscrição apontando que a próxima pista está
+                localizada no Amazonas.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+        </div>
 
-        <div class="passo" id="passo-1">
-            <p>Você encontra uma pegada de bota incomum na terra batida da Pista de Laço. Ela aponta para o centro da cidade. Você deve checar o monumento mais alto. Qual?</p>
-            <button class="btn-proximo" data-proximo="3">Catedral do Divino Espírito Santo</button>
-            <button class="btn-proximo" data-proximo="4">Torre da Sanepar</button>
-        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desitindo da aventura">
+            <p>Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria
+                encontrado.</p>
+        </div>
 
-        <div class="passo" id="passo-2">
-            <p>O chão da Arena de Shows tem uma inscrição quase apagada. Você decifra as palavras: "Um lugar de paz e história." Isso pode se referir a qual local tradicional de Umuarama?</p>
-            <button class="btn-proximo" data-proximo="5">Bosque Uirapuru</button>
-            <button class="btn-proximo" data-proximo="6">Museu de Arte Sacra</button>
-        </div>
+        <div class="passo" id="passo-5">
+            <p>Nas igrejas de Olinda, você descobre um mapa antigo escondido atrás de um altar, apontando que a próxima
+                pista está no Amazonas.</p>
+            <button class="btn-proximo" data-proximo="7">Viajar para o Amazonas</button>
+        </div>
 
-        <div class="passo" id="passo-3">
-            <p>Dentro da Catedral, você nota um livro de registro aberto em uma data antiga. O nome de um antigo comerciante de café está circulado. Onde ele poderia ter se reunido?</p>
-            <button class="btn-proximo" data-proximo="7">Teatro Vera Cruz</button>
-            <button class="btn-proximo" data-proximo="13">Lago Aratimbó (Pista Falsa)</button>
-        </div>
+        <div class="passo" id="passo-6">
+            <p>Explorando as praias, você encontra uma caverna escondida, mas ela leva a um beco sem saída.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar e explorar as igrejas</button>
+        </div>
 
-        <div class="passo" id="passo-4">
-            <p>Do alto da Torre, você vê uma luz piscando perto da Unipar. É código Morse soletrando: "Onde o boi e o café se encontram." Isso te leva ao restaurante tradicional onde eram fechados os negócios. O que fazer?</p>
-            <button class="btn-proximo" data-proximo="8">Procurar no Restaurante</button>
-            <button class="btn-proximo" data-proximo="13">Ir para uma Fazenda Antiga (Pista Falsa)</button>
-        </div>
+        <div class="passo" id="passo-7">
+            <p>No Amazonas, a busca pela cidade perdida se intensifica. Você se depara com um rio bifurcado.</p>
+            <button class="btn-proximo" data-proximo="9">Seguir pelo rio à esquerda</button>
+            <button class="btn-proximo" data-proximo="10">Seguir pelo rio à direita</button>
+        </div>
 
-        <div class="passo" id="passo-5">
-            <p>Você encontra um mapa rudimentar rabiscado em uma folha. Ele mostra uma área do Bosque e um ponto marcado perto da Praça Arthur Thomas. Qual local checar primeiro?</p>
-            <button class="btn-proximo" data-proximo="13">Seguir o mapa no Bosque (Pista Falsa)</button>
-            <button class="btn-proximo" data-proximo="9">Ir direto para a Praça Arthur Thomas</button>
-        </div>
+        <div class="passo" id="passo-8">
+            <p>De volta às igrejas, você finalmente encontra o mapa antigo. Agora, para o Amazonas!</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o Amazonas</button>
+        </div>
 
-        <div class="passo" id="passo-6">
-            <p>Atrás de uma moldura, você encontra um bilhete que diz: "O segredo está no coração da cidade, onde a vida noturna pulsa." Qual avenida é o centro do movimento em Umuarama?</p>
-            <button class="btn-proximo" data-proximo="10">Avenida Paraná (Comércio)</button>
-            <button class="btn-proximo" data-proximo="13">Avenida Rio Branco (Pista Falsa)</button>
-        </div>
+        <div class="passo" id="passo-9">
+            <p>O rio à esquerda leva você a uma cachoeira escondida com inscrições antigas que revelam a entrada da
+                cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+        </div>
 
-        <div class="passo" id="passo-7">
-            <p>No palco do Teatro, sob um tecido, está uma caixa trancada. A inscrição diz: "A chave está na arte de rua." Onde a arte de rua é mais proeminente em Umuarama?</p>
-            <button class="btn-proximo" data-proximo="11">Biblioteca Municipal (Final)</button>
-            <button class="btn-proximo" data-proximo="13">Beco do Batman (Pista Falsa)</button>
-        </div>
+        <div class="passo" id="passo-10">
+            <p>O rio à direita termina em uma área pantanosa. Apesar de belas vistas, não há sinais da cidade perdida
+                aqui.</p>
+            <button class="btn-proximo" data-proximo="12">Retornar e tentar o outro rio</button>
+        </div>
 
-        <div class="passo" id="passo-8">
-            <p>O garçom, que é um ex-colega, lhe entrega discretamente um guardanapo. Nele, está desenhada uma nota musical e a palavra "Teatro".</p>
-            <button class="btn-proximo" data-proximo="7">Ir para o Teatro Vera Cruz (Volta ao passo 7)</button>
-        </div>
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="encontrando uma cidade maravilhosa perdida no Amazonas">
+            <p>Dentro da cidade perdida, você descobre tesouros inimagináveis e decide se dedicar a estudar e preservar
+                este lugar</p>
+        </div>
 
-        <div class="passo" id="passo-9">
-            <p>Um homem disfarçado de estátua viva lhe entrega um objeto: uma cópia da chave da Biblioteca Municipal.</p>
-            <button class="btn-proximo" data-proximo="11">Ir para a Biblioteca Municipal</button>
-        </div>
-
-        <div class="passo" id="passo-10">
-            <p>Acompanhando o movimento das lojas, você nota que a luz em uma delas pisca em código Morse, soletrando "Biblioteca".</p>
-            <button class="btn-proximo" data-proximo="11">Ir para a Biblioteca Municipal</button>
-        </div>
-
-        <div class="passo" id="passo-11">
-            <img src="centro-cultural-recebe-neste-mes-de-abril-a-festa-literaria-capital-da-amizade-661d106b23b21.jpg" alt="Biblioteca Municipal - Pista Final"> 
-            <p>Você usa a chave/chega ao local. Dentro de um livro antigo sobre a história de Umuarama, você encontra um documento que revela a verdade sobre o símbolo antigo da Expo-Umuarama e sua conexão com a fundação da cidade. **FIM DA AVENTURA!**</p>
-        </div>
-        
-        <div class="passo" id="passo-12">
-            <p>Sua busca inicial levou a um beco sem saída. Mas a aventura em Umuarama continua! O que fazer?</p>
-            <button class="btn-proximo" data-proximo="2">Retornar para o Passo 2 e tentar a outra Opção</button>
-        </div>
-
-        <div class="passo" id="passo-13">
-            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando e desistindo da aventura">
-            <p>Você seguiu uma pista falsa. A informação era incompleta ou incorreta. Você decide que a aventura é grande demais e volta para casa, mas sempre se pergunta o que teria encontrado.</p>
-        </div>
-        
-    </main>
-    <script src="script.js"></script>
+        <div class="passo" id="passo-12">
+            <p>Retornando e escolhendo o rio à esquerda, você finalmente encontra a cachoeira escondida e as inscrições
+                que levam à cidade perdida.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar a cidade perdida</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
