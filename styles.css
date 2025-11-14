@@ -5,9 +5,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Usando min-height para garantir que o conteúdo não seja cortado e que o body preencha a tela */
+    /* Usando min-height para garantir que o body preencha a tela e se adapte ao conteúdo */
     min-height: 100vh; 
     margin: 0;
+    padding: 20px 0; /* Adiciona um padding vertical para não tocar as bordas */
 }
 
 button {
@@ -20,12 +21,17 @@ button {
     cursor: pointer;
     margin: 5px;
     transition: background-color 0.3s ease;
+    display: block; /* Garante que cada botão ocupe uma linha */
+    width: 90%;
+    margin: 10px auto; /* Centraliza o botão */
+    max-width: 400px;
 }
 
 button:hover {
     background-color: #4c8a0f;
 }
 
+/* Lógica de Visibilidade: Oculta todos, exceto o ativo */
 .passo {
     display: none;
     padding: 20px;
@@ -40,7 +46,7 @@ button:hover {
 main {
     text-align: center;
     max-width: 90%;
-    width: 600px; /* Limite a largura para melhor leitura */
+    width: 600px; /* Limita a largura do container principal */
 }
 
 img {
